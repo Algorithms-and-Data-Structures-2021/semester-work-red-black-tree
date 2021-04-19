@@ -15,7 +15,6 @@ namespace itis {
         BLACK, RED
     };
 
-
     struct Node {
     public:
         Node *left;
@@ -31,6 +30,7 @@ namespace itis {
             parent = nullptr;
             this->color = RED;
         }
+
         Node *uncle() {
             if (parent == nullptr || parent->parent == nullptr)
                 return nullptr;
@@ -295,6 +295,7 @@ namespace itis {
         Node *getRoot() {
             return root;
         }
+
         Node *search(int n) {
             Node *temp = root;
             while (temp != nullptr) {
@@ -383,7 +384,7 @@ namespace itis {
             if (x == nullptr)
                 return;
 
-            queue<Node *> q;
+            queue < Node * > q;
             Node *curr;
 
             // push x
