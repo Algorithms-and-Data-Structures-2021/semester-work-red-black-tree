@@ -311,7 +311,6 @@ namespace itis {
     Node *v = search(n);
 
     if (v->data != n) {
-      cout << "No node found to delete with value:" << n << endl;
       return;
     }
 
