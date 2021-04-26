@@ -1,6 +1,5 @@
 #include "data_structure.hpp"
 
-// файл с определениями
 
 namespace itis {
 
