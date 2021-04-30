@@ -1,11 +1,16 @@
 #pragma once
-
-
+#include <fstream>      // ifstream
+#include <iostream>     // cout
+#include <string>       // string, stoi
+#include <string_view>  // string_view
+#include <chrono>       // high_resolution_clock, duration_cast, nanoseconds
+#include <sstream>      // stringstream
+#include <random>       //engine and dist
 using namespace std;
 
 namespace itis {
 
-  enum nodeColor { BLACK, RED };
+  enum nodeColor {BLACK, RED};
 
   struct Node {
    public:
